@@ -1,0 +1,17 @@
+{
+  "name": "animal-bot",
+  "version": "0.0.0",
+  "description": "Display animal image from 500px.",
+  "main": "animalBot.js",
+  "repository": "",
+  "author": "Jun Su <jsu2@cisco.com>",
+  "dependencies": {
+    "500px": "^0.5.1",
+    "async": "~0.2.8",
+    "body-parser": "^1.16.1",
+    "express": "~3.2.4",
+    "node-flint": "^4.4.2",
+    "request": "^2.79.0",
+    "socket.io": "~0.9.14"
+  }
+}
