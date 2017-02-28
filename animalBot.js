@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 var config = {
   webhookUrl: 'https://animal-bot.herokuapp.com/flint',
   token: 'YTdlYTc2YzUtZDdhNi00NDc4LWI2MmEtMWZhNjkxMWUzZDUzMWQ2ZTFhZjItMjY3',
-  port: 8080,
+  port: process.env.PORT,
   removeWebhooksOnStart: false,
   maxConcurrent: 5,
   minTime: 50
@@ -29,7 +29,7 @@ var botHeaders = {
 
 
 var options = {
-   'url': 'https://api.ciscospark.com/v1/messages',
+   url: 'https://api.ciscospark.com/v1/messages',
    method: 'POST',
    headers: headers,
    form: {}
@@ -77,7 +77,7 @@ flint.hears(/^animal/i, function(bot, trigger) {
     };
     
     request({
-      url:'https://api.ciscospark.com/v1/messages',
+      url: options.url,
       method: 'POST',
       headers: botHeaders,
       form: form
