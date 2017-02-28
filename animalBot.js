@@ -9,7 +9,7 @@ app.use(bodyParser.json());
 
 // flint options
 var config = {
-  webhookUrl: 'https://animal-bot-ragnaroksj.c9users.io/flint',
+  webhookUrl: 'https://animal-bot.herokuapp.com/flint',
   token: 'YTdlYTc2YzUtZDdhNi00NDc4LWI2MmEtMWZhNjkxMWUzZDUzMWQ2ZTFhZjItMjY3',
   port: 8080,
   removeWebhooksOnStart: false,
